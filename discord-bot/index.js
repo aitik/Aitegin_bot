@@ -48,4 +48,4 @@ else if (command === `unmute_all`) {
 }
 });
 
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.token);
