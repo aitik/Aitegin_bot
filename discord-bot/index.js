@@ -22,7 +22,7 @@ const command = args.shift().toLowerCase();
 else if (command === `user-info`) {
 	message.channel.send(`Your username: ${message.author.username}\nYour ID: ${message.author.id}`);
 }
-else if (command === `mute_all`) {
+else if (command === `m`) {
   // const channel1 = message.member.voice.channel;
   // message.channel.send(message.member.voice.name);
   //       for (const member of channel1.members) {
@@ -34,7 +34,7 @@ else if (command === `mute_all`) {
   }
         message.channel.send('muted');
 }
-else if (command === `unmute_all`) {
+else if (command === `u`) {
   // const channel1 = message.member.voice.channel;
   // message.channel.send(message.member.voice.name);
   //       for (const member of channel1.members) {
