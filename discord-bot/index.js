@@ -48,8 +48,8 @@ else if (command === `u`) {
 }
     else if (command === `start`) {
 	message.channel.send(`Muted`);
-	    message.react('759560260020469770');
-	    message.react('759560424399437824');
+	    message.react(':white_check_mark:');
+	    message.react(':x:');
 }
 });
 
