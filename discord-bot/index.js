@@ -48,7 +48,7 @@ else if (command === `u`) {
 }
     else if (command === `start`) {
 	message.channel.send(`Muted`);
-	    message.react('\:smile:');
+	    message.react('🔥');
 	    
 }
 });
