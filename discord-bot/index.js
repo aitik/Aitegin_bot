@@ -46,6 +46,11 @@ else if (command === `u`) {
   }
         message.channel.send('unmuted');
 }
+    else if (command === `start`) {
+	message.channel.send(`Muted`);
+	    message.react(`759560260020469770`);
+	    message.react(`759560424399437824`);
+}
 });
 
 client.login(process.env.token);
