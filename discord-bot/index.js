@@ -55,7 +55,7 @@ const filter = (reaction, user) => {
 	return ['👍', '👎'].includes(reaction.emoji.name);
 };
 
-message.awaitReactions(filter, { max: 10, time: Infinity, errors: ['time'] })
+message.awaitReactions(filter, { max: 10, time: 600000, errors: ['time'] })
 	.then(collected => {
 		const reaction = collected.first();
 
