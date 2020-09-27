@@ -52,10 +52,10 @@ else if (command === `u`) {
 	message.react('👍').then(() => message.react('👎'));
 
 const filter = (reaction, user) => {
-	return ['👍', '👎'].includes(reaction.emoji.name);
+	return ['👍', '👎'].includes(reaction.emoji.name) && user.id === message.author.id;
 };
 
-message.awaitReactions(filter, { max: 10, time: 600000, errors: ['time'] })
+message.awaitReactions(filter, { max: 1})
 	.then(collected => {
 		const reaction = collected.first();
 
