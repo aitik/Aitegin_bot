@@ -63,11 +63,15 @@ collector.on('collect', (reaction, user) => {
 			let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
   for (const [memberID, member] of channel.members) {
     member.voice.setMute(true);
+	  message.reactions.forEach(reaction => reaction.remove('255062830041006080'));
+	  message.reactions.forEach(reaction => reaction.remove('467648406722969635'));
   }
 		} else {
 			let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
   for (const [memberID, member] of channel.members) {
     member.voice.setMute(false);
+	  message.reactions.forEach(reaction => reaction.remove('255062830041006080'));
+	  message.reactions.forEach(reaction => reaction.remove('467648406722969635'));
   }
 		}
 });
