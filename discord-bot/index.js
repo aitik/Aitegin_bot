@@ -55,19 +55,20 @@ const filter = (reaction, user) => {
 	return ['👍', '👎'].includes(reaction.emoji.name) && user.id === message.author.id;
 };
 
-message.awaitReactions(filter, { max: 10})
-	.then(collected => {
-		const reaction = collected.first();
+const collector = message.createReactionCollector(filter);
 
-		if (reaction.emoji.name === '👍') {
+collector.on('collect', (reaction, user) => {
+	console.log(`Collected ${reaction.emoji.name} from ${user.tag}`);
+	if (reaction.emoji.name === '👍') {
 			message.reply('you reacted with a thumbs up.');
 		} else {
 			message.reply('you reacted with a thumbs down.');
 		}
-	})
-	.catch(collected => {
-		message.reply('you reacted with neither a thumbs up, nor a thumbs down.');
-	});
+});
+
+collector.on('end', collected => {
+	console.log(`Collected ${collected.size} items`);
+});
 //	    
 }
 });
