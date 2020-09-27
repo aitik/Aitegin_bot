@@ -47,7 +47,7 @@ else if (command === `u`) {
         message.channel.send('unmuted');
 }
     else if (command === `start`) {
-	message.channel.send(`Muted`);
+	message.channel.send(`Bot started working. React to your message 👍 to mute and 👎 to unmute.`);
 //
 	message.react('👍').then(() => message.react('👎'));
 
