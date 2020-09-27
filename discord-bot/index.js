@@ -51,8 +51,8 @@ else if (command === `u`) {
 //
 	message.react('👍').then(() => message.react('👎'));
 
-const filter = (reaction, user) => {
-	return ['👍', '👎'].includes(reaction.emoji.name) && user.id === message.author.id;
+const filter = (reaction) => {
+	return ['👍', '👎'].includes(reaction.emoji.name);
 };
 
 const collector = message.createReactionCollector(filter);
@@ -60,9 +60,15 @@ const collector = message.createReactionCollector(filter);
 collector.on('collect', (reaction, user) => {
 	console.log(`Collected ${reaction.emoji.name} from ${user.tag}`);
 	if (reaction.emoji.name === '👍') {
-			message.reply('you reacted with a thumbs up.');
+			let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
+  for (const [memberID, member] of channel.members) {
+    member.voice.setMute(true);
+  }
 		} else {
-			message.reply('you reacted with a thumbs down.');
+			let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
+  for (const [memberID, member] of channel.members) {
+    member.voice.setMute(false);
+  }
 		}
 });
 
