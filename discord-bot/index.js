@@ -55,7 +55,7 @@ const filter = (reaction) => {
 	return ['👍', '👎'].includes(reaction.emoji.name);
 };
 
-const collector = message.createReactionCollector(filter);
+const collector = message.createReactionCollector(filter, { time: 7200000 });
 
 collector.on('collect', (reaction, user) => {
 	console.log(`Collected ${reaction.emoji.name} from ${user.tag}`);
