@@ -47,9 +47,12 @@ else if( command === `f2`){
 		message.channel.send(`https://cdn.discordapp.com/attachments/798422846128521266/798429645552615424/Fem-1.mp4`);
 }
 else if( command === `f3`){
+	while(iff){
+		
 	message.channel.send({
     files: [`https://cdn.discordapp.com/attachments/798422846128521266/798429645552615424/Fem-1.mp4`]
 });
+	}
 }
 else if (command === `noff`){
 iff = false;
