@@ -7,6 +7,7 @@ client.on('message', message => {
 
 const args = message.content.slice(prefix.length).trim().split(' ');
 const command = args.shift().toLowerCase();
+const iff = false;
 
 
   if (command === `check`) {
@@ -33,6 +34,19 @@ else if (command === `m`) {
     member.voice.setMute(true);
   }
         message.channel.send('muted');
+}
+else if( command === `f`){
+	iff = true;
+	if(iff){
+		message.channel.send("Testing message.", {
+  files: [
+    "https://cdn.discordapp.com/attachments/798422846128521266/798429645552615424/Fem-1.mp4"
+  ]
+});
+	}
+}
+else if (command === `noff`){
+iff = false;
 }
 else if (command === `u`) {
   // const channel1 = message.member.voice.channel;
