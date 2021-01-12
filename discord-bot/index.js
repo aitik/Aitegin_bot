@@ -36,9 +36,10 @@ else if (command === `m`) {
         message.channel.send('muted');
 }
 else if( command === `f`){
+	const att = new Attachment(`https://cdn.discordapp.com/attachments/798422846128521266/798429645552615424/Fem-1.mp4`);
 	if(iff){
 		while(iff){
-		message.channel.send(message.author, `https://cdn.discordapp.com/attachments/798422846128521266/798429645552615424/Fem-1.mp4`);
+		message.channel.send(message.author, att);
 		}
 }
 }
