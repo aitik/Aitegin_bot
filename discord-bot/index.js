@@ -7,7 +7,7 @@ client.on('message', message => {
 
 const args = message.content.slice(prefix.length).trim().split(' ');
 const command = args.shift().toLowerCase();
-const iff = false;
+var iff = true;
 
 
   if (command === `check`) {
@@ -36,7 +36,6 @@ else if (command === `m`) {
         message.channel.send('muted');
 }
 else if( command === `f`){
-	iff = true;
 	if(iff){
 		while(iff){
 		message.channel.send(message.author, `https://cdn.discordapp.com/attachments/798422846128521266/798429645552615424/Fem-1.mp4`);
