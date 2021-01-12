@@ -42,12 +42,18 @@ else if( command === `f`){
 		message.channel.send(message.author, att);
 		}
 }
-	else if( command === `f2`){
+else if( command === `f2`){
 		message.channel.send(`https://cdn.discordapp.com/attachments/798422846128521266/798429645552615424/Fem-1.mp4`);
 }
+else if( command === `f3`){
+	message.channel.send({
+    files: [`https://cdn.discordapp.com/attachments/798422846128521266/798429645552615424/Fem-1.mp4`]
+});
 }
 else if (command === `noff`){
 iff = false;
+			message.channel.send(`sss`);
+
 }
 else if (command === `u`) {
   // const channel1 = message.member.voice.channel;
