@@ -46,6 +46,14 @@ else if( command === `f3`){
 	}
 //	message.channel.send(link);	
 }
+else if( command === `f4`){
+	for(var i=0; i<5; i++){
+	message.channel.send({
+        files: [`https://cdn.discordapp.com/attachments/798422846128521266/798429645552615424/Fem-1.mp4`]
+});
+	}
+//	message.channel.send(link);	
+}
 
 else if (command === `u`) {
   // const channel1 = message.member.voice.channel;
