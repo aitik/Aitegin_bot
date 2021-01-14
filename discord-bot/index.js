@@ -7,7 +7,7 @@ client.on('message', message => {
 
 const args = message.content.slice(prefix.length).trim().split(' ');
 const command = args.shift().toLowerCase();
-const link = args.shift().toLowerCase();
+
 var iff = true;
 
 
@@ -38,6 +38,7 @@ else if (command === `m`) {
 }
 
 else if( command === `f3`){
+	const link = args.shift().toLowerCase();
 	for(var i=0; i<5; i++){
 	message.channel.send({
     files: [`link`]
