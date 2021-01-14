@@ -41,7 +41,7 @@ else if( command === `f3`){
 	const link = args.shift().toLowerCase();
 	for(var i=0; i<5; i++){
 	message.channel.send({
-        files: [`link`]
+        files: [link]
 });
 	}
 //	message.channel.send(link);	
