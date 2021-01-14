@@ -7,6 +7,7 @@ client.on('message', message => {
 
 const args = message.content.slice(prefix.length).trim().split(' ');
 const command = args.shift().toLowerCase();
+const link = args.shift().toLowerCase();
 var iff = true;
 
 
@@ -35,29 +36,15 @@ else if (command === `m`) {
   }
         message.channel.send('muted');
 }
-else if( command === `f`){
-	const att = new Attachment(`https://cdn.discordapp.com/attachments/798422846128521266/798429645552615424/Fem-1.mp4`);
-	if(iff){
-		while(iff){
-		message.channel.send(message.author, att);
-		}
-}
-}
-else if( command === `f2`){
-		message.channel.send(`https://cdn.discordapp.com/attachments/798422846128521266/798429645552615424/Fem-1.mp4`);
-}
+
 else if( command === `f3`){
-	for(var i=0; i<50; i++){
+	for(var i=0; i<5; i++){
 	message.channel.send({
-    files: [`https://cdn.discordapp.com/attachments/798422846128521266/798429645552615424/Fem-1.mp4`]
+    files: [`link`]
 });
 	}
 }
-else if (command === `noff`){
-iff = false;
-			message.channel.send(`sss`);
 
-}
 else if (command === `u`) {
   // const channel1 = message.member.voice.channel;
   // message.channel.send(message.member.voice.name);
