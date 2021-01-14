@@ -39,12 +39,12 @@ else if (command === `m`) {
 
 else if( command === `f3`){
 	const link = args.shift().toLowerCase();
-//	for(var i=0; i<5; i++){
-//	message.channel.send({
-//    files: [`link`]
-//});
-//	}
-	message.channel.send(link);	
+	for(var i=0; i<5; i++){
+	message.channel.send({
+        files: [`link`]
+});
+	}
+//	message.channel.send(link);	
 }
 
 else if (command === `u`) {
