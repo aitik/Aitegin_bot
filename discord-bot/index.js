@@ -52,12 +52,13 @@ else if( command === `f4`){
         files: [`https://cdn.discordapp.com/attachments/798422846128521266/798429645552615424/Fem-1.mp4`]
 });
 	}
+}
 //	message.channel.send(link);	
 
 	  else if (command === `f5`) {
 		  for(var i=0; i<75; i++){
 	message.channel.send('yeah fuck you');
-}};
+		  }
 }
 
 
