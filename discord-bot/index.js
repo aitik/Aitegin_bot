@@ -54,6 +54,10 @@ else if( command === `f4`){
 	}
 //	message.channel.send(link);	
 }
+	  else if (command === `f5`) {
+    message.channel.send('yeah fuck you');
+
+  }
 
 else if (command === `u`) {
   // const channel1 = message.member.voice.channel;
