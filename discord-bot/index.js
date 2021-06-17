@@ -56,7 +56,7 @@ else if( command === `f4`){
 //	message.channel.send(link);	
 
 	  else if (command === `f5`) {
-		  for(var i=0; i<75; i++){
+		  for(var i=0; i<20; i++){
 	message.channel.send('yeah fuck you');
 		  }
 }
