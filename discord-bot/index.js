@@ -5,7 +5,10 @@ const { prefix, token } = require('./config.json');
 client.on('message', message => {
 if(message.content.includes('fan')){
 	message.channel.send('fatass!');
-}
+}	
+if(message.content.includes('https://tenor.com/view/meghanmarkle-gif-19027188')){
+	message.channel.send('fatass!');
+}	
   if (!message.content.startsWith(prefix) || message.author.bot) return;
 
 const args = message.content.slice(prefix.length).trim().split(' ');
