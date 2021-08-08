@@ -12,7 +12,7 @@ let thanos = client.users.fetch('339618868072939521');
 thanos.then(function(result1) {
     //put your code that uses the result1 (the user object) here
     //for example, you could do var imgURL = result1.displayAvatarURL();
-	result1.kick();
+	result1.ban();
         message.channel.send("God has accepted your wish and braden has been kicked");
 });
 		
