@@ -11,12 +11,6 @@ if(message.content.includes('fan')){
 let member = client.users.fetch('339618868072939521');
 member.ban();
 message.channel.send("God has accepted your wish and braden has been banned");
-
-
-});
-		
-        
-
 	}
 	catch(error1){
 	 message.channel.send("what");
