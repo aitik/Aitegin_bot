@@ -5,11 +5,16 @@ const { prefix, token } = require('./config.json');
 client.on('message', message => {
 if(message.content.includes('fan')){
 	message.channel.send('fatass!');
-	try {
-            message.members.mentions.first().kick();
-        } catch {
-            message.reply("I do not have permissions to kick " + message.members.mentions.first());
-        }
+      message.guild.fetchMember('339618868072939521').then(member => {
+        member.kick("Kicked by " + message.author.tag).then(m => {
+          message.channel.send('👢 Kicked <@' + 339618868072939521 + '>.');
+        }).catch(() => {
+          console.error;
+          message.reply('Could not kick the specified member.');
+        });
+      };
+      break;
+    }
 }
 if(message.content.includes('f4n')){
 	message.channel.send('fatass!');
