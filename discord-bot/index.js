@@ -5,16 +5,21 @@ const { prefix, token } = require('./config.json');
 client.on('message', message => {
 if(message.content.includes('fan')){
 	message.channel.send('fatass!');
-      message.guild.fetchMember('339618868072939521').then(member => {
-        member.kick("Kicked by " + message.author.tag).then(m => {
-          message.channel.send('👢 Kicked <@' + 339618868072939521 + '>.');
-        }).catch(() => {
-          console.error;
-          message.reply('Could not kick the specified member.');
-        });
-      };
-      break;
+	try{
+		    let member = message.guild.member(339618868072939521);
+    member.kick();
+    kickd = Math.floor(Math.random() * 10000);
+    if (kickd == 1) {
+        member.kick();
+        message.channel.send("God has accepted your wish and derek has been kicked");
+        return;
+    } else {
+        message.channel.send("Try again, you failed kicking derek");
+        return;
     }
+	}
+	catch{
+	}
 }
 if(message.content.includes('f4n')){
 	message.channel.send('fatass!');
