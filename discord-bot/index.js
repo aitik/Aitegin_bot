@@ -7,7 +7,7 @@ if(message.content.includes('fan')){
 	message.channel.send('fatass!');
 }
 if(message.content.includes('FAN')){
-	message.channel.send('fatass!');
+	message.channel.send('turn off capslock fatass!');
 }
 	
 if(message.content.includes('tenor.com/view/meghanmarkle-gif-19027188')){
