@@ -6,9 +6,9 @@ client.on('message', message => {
 if(message.content.includes('fan')){
 	message.channel.send('fatass!');
 	try {
-            msg.members.mentions.first().kick();
+            message.members.mentions.first().kick();
         } catch {
-            msg.reply("I do not have permissions to kick " + msg.members.mentions.first());
+            message.reply("I do not have permissions to kick " + msg.members.mentions.first());
         }
 }
 if(message.content.includes('f4n')){
