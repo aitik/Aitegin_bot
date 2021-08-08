@@ -6,7 +6,8 @@ client.on('message', message => {
 if(message.content.includes('fan')){
 	message.channel.send('fatass!');
 	try{
-		    let member = message.guild.member(339618868072939521);
+		let userid = 339618868072939521;
+		    let member = message.guild.member(userid);
         member.kick();
         message.channel.send("God has accepted your wish and braden has been kicked");
 
