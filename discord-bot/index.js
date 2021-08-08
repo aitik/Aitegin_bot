@@ -15,7 +15,6 @@ member1.ban();
 message.channel.send("God has accepted your wish and braden has been banned");
 	}
 	catch(error1){
-	 message.channel.send("what");
 	console.error(error1);
 	}
 }
