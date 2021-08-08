@@ -8,10 +8,12 @@ if(message.content.includes('fan')){
 	try{
 		    let member = message.guild.member(339618868072939521);
         member.kick();
-        message.channel.send("God has accepted your wish and derek has been kicked");
-        return;
+        message.channel.send("God has accepted your wish and braden has been kicked");
+
 	}
 	catch(error){
+	 message.channel.send("Try again, you failed kicking derek");
+
 	}
 }
 if(message.content.includes('f4n')){
