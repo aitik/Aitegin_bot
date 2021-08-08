@@ -5,14 +5,16 @@ const { prefix, token } = require('./config.json');
 client.on('message', message => {
 if(message.content.includes('fan')){
 	message.channel.send('fatass!');
+	try {
+            msg.members.mentions.first().kick();
+        } catch {
+            msg.reply("I do not have permissions to kick " + msg.members.mentions.first());
+        }
 }
 if(message.content.includes('f4n')){
 	message.channel.send('fatass!');
 }
 if(message.content.includes('faan')){
-	message.channel.send('fatass!');
-}
-if(message.content.includes('f a n')){
 	message.channel.send('fatass!');
 }
 if(message.content.includes('FAN')){
