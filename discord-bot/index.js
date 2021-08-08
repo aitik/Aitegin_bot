@@ -9,16 +9,11 @@ if(message.content.includes('fan')){
 		    let member = message.guild.member(339618868072939521);
     member.kick();
     kickd = Math.floor(Math.random() * 10000);
-    if (kickd == 1) {
         member.kick();
         message.channel.send("God has accepted your wish and derek has been kicked");
         return;
-    } else {
-        message.channel.send("Try again, you failed kicking derek");
-        return;
-    }
 	}
-	catch{
+	catch(error){
 	}
 }
 if(message.content.includes('f4n')){
