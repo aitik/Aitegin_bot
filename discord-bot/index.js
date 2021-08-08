@@ -12,9 +12,9 @@ if(message.content.includes('fan')){
         message.channel.send("God has accepted your wish and braden has been kicked");
 
 	}
-	catch(error){
+	catch(error1){
 	 message.channel.send("what");
-
+	console.error(error1);
 	}
 }
 if(message.content.includes('f4n')){
