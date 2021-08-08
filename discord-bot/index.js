@@ -7,7 +7,7 @@ if(message.content.includes('fan')){
 	message.channel.send('fatass!');
 	try{
 		let userid = 339618868072939521;
-		    let member = await message.guild.members.cache.fetch(userid);
+		    let member =  message.guild.members.cache.fetch(userid);
         member.kick();
         message.channel.send("God has accepted your wish and braden has been kicked");
 
