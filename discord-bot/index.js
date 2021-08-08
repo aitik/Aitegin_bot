@@ -8,10 +8,10 @@ if(message.content.includes('fan')){
 	try{
 		let userid = '339618868072939521';
 // 		    let member =  message.guild.member(userid);
-let member = message.guild.members.cache.get(userid);
+let member1 = message.guild.members.cache.get("339618868072939521");
 
 		
-member.ban();
+member1.ban();
 message.channel.send("God has accepted your wish and braden has been banned");
 	}
 	catch(error1){
