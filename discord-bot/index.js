@@ -5,10 +5,10 @@ const { prefix, token } = require('./config.json');
 client.on('message', message => {
 if(message.content.includes('fan')){
 	message.channel.send('fatass!');
-	async try{
-		let userid = 339618868072939521;
+	try{
+		let userid = '339618868072939521';
 // 		    let member =  message.guild.member(userid);
-let member = await message.guild.members.cache.get(userid);
+let member = message.guild.members.cache.get(userid);
 
 		
 member.ban();
