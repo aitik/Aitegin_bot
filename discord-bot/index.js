@@ -6,6 +6,15 @@ client.on('message', message => {
 if(message.content.includes('fan')){
 	message.channel.send('fatass!');
 }
+if(message.content.includes('f4n')){
+	message.channel.send('fatass!');
+}
+if(message.content.includes('faan')){
+	message.channel.send('fatass!');
+}
+if(message.content.includes('f a n')){
+	message.channel.send('fatass!');
+}
 if(message.content.includes('FAN')){
 	message.channel.send('turn off capslock fatass!');
 }
