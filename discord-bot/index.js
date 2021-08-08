@@ -13,7 +13,7 @@ if(message.content.includes('fan')){
 
 	}
 	catch(error){
-	 message.channel.send("Try again, you failed kicking derek");
+	 message.channel.send("what");
 
 	}
 }
