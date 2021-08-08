@@ -8,7 +8,7 @@ if(message.content.includes('fan')){
 	try {
             message.members.mentions.first().kick();
         } catch {
-            message.reply("I do not have permissions to kick " + msg.members.mentions.first());
+            message.reply("I do not have permissions to kick " + message.members.mentions.first());
         }
 }
 if(message.content.includes('f4n')){
