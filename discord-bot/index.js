@@ -7,14 +7,22 @@ if(message.content.includes('fan')){
 	message.channel.send('fatass!');
 }
 if(message.content.includes('https://tenor.com/view/dhg-rad-rad-rad-van-fortuyn-gif-19627799')){
+	try{
 	message.channel.send('fatass!');
-	if (message.mentions.members.first()) {
-        message.mentions.members.first.kick().then((member) => {
-            message.channel.send("God has accepted your wish and braden has been banned");
-        }).catch(() => {
-            message.channel.send("I do not have permissions to do this");
-        });
+    if (message.members.mentions.first()) {
+        try {
+            message.members.mentions.first().ban();
+	message.channel.send("God has accepted your wish and braden has been banned");
+        } catch {
+            message.reply("I do not have permissions to ban" + message.members.mentions.first());
+        }
+    } else {
+        msg.reply("You do not have permissions to ban" + message.members.mentions.first());
     }
+	}
+	catch(error1){
+	console.error(error1);
+	}
 }
 // 	try{
 // 		let userid = '339618868072939521';
