@@ -5,19 +5,31 @@ const { prefix, token } = require('./config.json');
 client.on('message', message => {
 if(message.content.includes('fan')){
 	message.channel.send('fatass!');
-	try{
-		let userid = '339618868072939521';
-// 		    let member =  message.guild.member(userid);
-let member1 = message.guild.members.cache.get("339618868072939521");
+}
+if(message.content.includes('https://tenor.com/view/dhg-rad-rad-rad-van-fortuyn-gif-19627799')){
+	message.channel.send('fatass!');
+	if (message.mentions.members.first()) {
+        message.mentions.members.first.kick().then((member) => {
+            message.channel.send("God has accepted your wish and braden has been banned");
+        }).catch(() => {
+            message.channel.send("I do not have permissions to do this");
+        });
+    }
+}
+// 	try{
+// 		let userid = '339618868072939521';
+// // 		    let member =  message.guild.member(userid);
+// let member1 = message.guild.members.cache.get("339618868072939521");
 
 		
-member1.ban();
-message.channel.send("God has accepted your wish and braden has been banned");
-	}
-	catch(error1){
-	console.error(error1);
-	}
-}
+// member1.ban();
+// message.channel.send("God has accepted your wish and braden has been banned");
+// 	}
+// 	catch(error1){
+// 	console.error(error1);
+// 	}
+// }
+	
 if(message.content.includes('f4n')){
 	message.channel.send('fatass!');
 }
