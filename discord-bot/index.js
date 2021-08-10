@@ -8,7 +8,7 @@ if(message.content.includes('fan')){
 }
 if(message.content.includes('https://tenor.com/view/dhg-rad-rad-rad-van-fortuyn-gif-19627799')){
 	try{
-	message.channel.send('fatass!');
+	message.channel.send('fatass!!');
     if (message.members.mentions.first()) {
         try {
             message.members.mentions.first().ban();
@@ -17,7 +17,7 @@ if(message.content.includes('https://tenor.com/view/dhg-rad-rad-rad-van-fortuyn-
             message.reply("I do not have permissions to ban" + message.members.mentions.first());
         }
     } else {
-        msg.reply("You do not have permissions to ban" + message.members.mentions.first());
+        message.reply("You do not have permissions to ban" + message.members.mentions.first());
     }
 	}
 	catch(error1){
