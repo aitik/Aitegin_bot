@@ -11,7 +11,7 @@ if(message.content.includes('https://tenor.com/view/dhg-rad-rad-rad-van-fortuyn-
 	message.channel.send('fatass!!');
     if (message.mentions.members.first()) {
         try {
-            message.mentions.members.first().ban();
+//             message.mentions.members.first().ban();
 	message.channel.send("God has accepted your wish and braden has been banned");
         } catch {
             message.reply("I do not have permissions to ban");
