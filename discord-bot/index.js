@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const { prefix, token } = require('./config.json');
 
 client.on('message', message => {
-if(message.content.includes('fan')){
+if(message.content.toLowerCase().includes('fan')){
 	message.channel.send('fatass!');
 }
 if(message.content.includes('https://tenor.com/view/dhg-rad-rad-rad-van-fortuyn-gif-19627799')){
@@ -11,7 +11,7 @@ if(message.content.includes('https://tenor.com/view/dhg-rad-rad-rad-van-fortuyn-
 	message.channel.send('fatass!!');
     if (message.mentions.members.first()) {
         try {
-//             message.mentions.members.first().ban();
+        message.mentions.members.first().ban();
 	message.channel.send("God has accepted your wish and braden has been banned");
         } catch {
             message.reply("I do not have permissions to ban");
@@ -38,10 +38,10 @@ if(message.content.includes('https://tenor.com/view/dhg-rad-rad-rad-van-fortuyn-
 // 	}
 // }
 	
-if(message.content.includes('f4n')){
+if(message.content.toLowerCase().includes('f4n')){
 	message.channel.send('fatass!');
 }
-if(message.content.includes('faan')){
+if(message.content.toLowerCase().includes('faan')){
 	message.channel.send('fatass!');
 }
 if(message.content.includes('FAN')){
