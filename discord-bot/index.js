@@ -159,7 +159,7 @@ collector.on('collect', (reaction, user) => {
 collector.on('end', collected => {
 	console.log(`Collected ${collected.size} items`);
 });
-//	    
+	    
 }
 });
 
