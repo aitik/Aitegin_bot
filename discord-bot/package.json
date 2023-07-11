@@ -4,7 +4,7 @@
   "description": "first bot",
   "main": "index.js",
   "scripts": {
-    "build": "netlify deploy --prod"
+    "build": "npm start"
   },
   "author": "Aitegin Akmatbekov",
   "license": "ISC",
@@ -13,8 +13,6 @@
   },
   "engines": {
     "node": "v16.13.2",
-    "npm": "9.8.0",
-    "netlify-cli": "^12.7.2",
-    "netlify-lambda": "^2.0.15"
+    "npm": "9.8.0"
   }
 }
