@@ -1,2 +1,2 @@
-[build.post]
-  command = "npm start"
+[build]
+  command = "npm install && pm2 start index.js --name my-app --no-daemon"
