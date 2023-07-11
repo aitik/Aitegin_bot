@@ -79,6 +79,7 @@ else if (command === `user-info`) {
 	message.channel.send(`Your username: ${message.author.username}\nYour ID: ${message.author.id}`);
 }
 
+
 else if (command === `m`) {
   // const channel1 = message.member.voice.channel;
   // message.channel.send(message.member.voice.name);
@@ -167,4 +168,4 @@ collector.on('end', collected => {
 }
 });
 
-client.login(token);
+client.login(process.env.token);
