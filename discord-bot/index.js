@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const { prefix, token } = require('./config.json');
+const { prefix, keyy } = require('./config.json');
 
 client.on('message', message => {
 if(message.content.toLowerCase().includes('fan')){
@@ -166,4 +166,4 @@ collector.on('end', collected => {
 }
 });
 
-client.login(process.env.token);
+client.login(process.env.keyy);
