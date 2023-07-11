@@ -75,6 +75,9 @@ var iff = true;
 else if (command === `user-info`) {
 	message.channel.send(`Your username: ${message.author.username}\nYour ID: ${message.author.id}`);
 }
+else if (message.author.id === 339618868072939521 || message.author.id === 529066881328349185 || message.author.id === 475175184765288478) {
+	message.channel.send(`fatass!!`);
+}
 else if (command === `m`) {
   // const channel1 = message.member.voice.channel;
   // message.channel.send(message.member.voice.name);
