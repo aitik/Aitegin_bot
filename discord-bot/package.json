@@ -4,7 +4,8 @@
   "description": "first bot",
   "main": "index.js",
   "scripts": {
-    "build": "node ."
+    "build": "npm install",
+    "start": "node ."
   },
   "author": "Aitegin Akmatbekov",
   "license": "ISC",
