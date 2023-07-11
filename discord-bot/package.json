@@ -4,6 +4,7 @@
   "description": "first bot",
   "main": "index.js",
   "scripts": {
+    "build": "npm install",
     "start": "node index.js"
   },
   "author": "Aitegin Akmatbekov",
