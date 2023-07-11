@@ -9,12 +9,7 @@
   "author": "Aitegin Akmatbekov",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.3.1",
-    "eslint": "^7.9.0",
-    "pm2-windows-service": "^0.2.1",
-    "node-windows": "^0.1.14",
-    "node-mac": "^0.1.8",
-    "node-linux": "^0.1.11"
+    "discord.js": "^12.3.1"
   },
   "engines": {
     "node": "v16.13.2",
