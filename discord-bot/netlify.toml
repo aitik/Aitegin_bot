@@ -1,2 +1,2 @@
-[build]
-  command = "npm install && pm2 start index.js --name my-app --no-daemon"
+[context.production]
+  command = "npm ci && npm install pm2 -g && pm2 start index.js"
