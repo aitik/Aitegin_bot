@@ -166,4 +166,4 @@ collector.on('end', collected => {
 }
 });
 
-client.login(token);
+client.login(process.env.token);
